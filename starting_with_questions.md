@@ -27,8 +27,33 @@ Answer: The city with the highest level of transaction revenue on the site is Sa
 SQL Queries:
 
 
+SELECT ROUND(AVG(counts)) AS average_purchase FROM(
+SELECT country, COUNT(productsku) AS counts
+FROM all_sessions
+WHERE city IS NOT NULL AND country IS NOT NULL
+GROUP BY city, country)
+ORDER BY AVG(counts) DESC
+
+SELECT country, ROUND(AVG(counts)) AS average_purchase FROM(
+SELECT country, COUNT(productsku) AS counts
+FROM all_sessions
+WHERE city IS NOT NULL AND country IS NOT NULL
+GROUP BY city, country)
+GROUP BY country
+ORDER BY AVG(counts) DESC
+
+SELECT city, ROUND(AVG(counts))  AS average_purchase FROM(
+SELECT city, COUNT(productsku) AS counts
+FROM all_sessions
+WHERE city IS NOT NULL AND country IS NOT NULL
+GROUP BY city, country)
+GROUP BY city
+ORDER BY AVG(counts) DESC
+
 
 Answer:
+Just the total average between all cities and countries is 21 (First query) the other 2 queries will show you the average number of products bought from every country or city.
+
 
 
 
@@ -39,9 +64,29 @@ Answer:
 
 SQL Queries:
 
+SELECT  v2productcategory, COUNT(v2productcategory) FROM all_sessions
+WHERE country IS NOT NULL AND country != '(not set)'
+GROUP BY v2productcategory
+ORDER BY COUNT(v2productcategory) DESC
 
+SELECT country, v2productcategory, COUNT(v2productcategory) FROM all_sessions
+WHERE country IS NOT NULL AND country != '(not set)'
+GROUP BY country, v2productcategory
+ORDER BY COUNT(v2productcategory) DESC
+
+SELECT city, v2productcategory, COUNT(v2productcategory) FROM all_sessions
+WHERE city IS NOT NULL AND city != '(not set)'
+GROUP BY city, v2productcategory
+ORDER BY COUNT(v2productcategory) DESC
+
+SELECT v2productcategory, COUNT(v2productcategory) FROM all_sessions
+WHERE city IS NOT NULL AND city != '(not set)'
+GROUP BY v2productcategory
+ORDER BY COUNT(v2productcategory) DESC
 
 Answer:
+
+It looks like the majority of product categories of the product, be it countries or cities, is bought from Youtube or Men's-T-Shirt category
 
 
 
