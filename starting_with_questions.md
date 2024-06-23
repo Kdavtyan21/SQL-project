@@ -97,9 +97,21 @@ It looks like the majority of product categories of the product, be it countries
 
 SQL Queries:
 
+SELECT city, COUNT(v2productname), v2productname FROM all_sessions
+WHERE city IS NOT NULL
+GROUP BY city, v2productname
+ORDER BY COUNT(v2productname) DESC
+
+SELECT country, COUNT(v2productname), v2productname FROM all_sessions
+WHERE city IS NOT NULL
+GROUP BY country, v2productname
+ORDER BY COUNT(v2productname) DESC
+
+
 
 
 Answer:
+Majority of products that are purchased from Mountain view, which is known as one of the major cities that makes up Silicon Valley, are technologies, specfically Google technologies.
 
 
 
