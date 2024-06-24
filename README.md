@@ -4,8 +4,8 @@
 The goal for this project is to get a better understanding on the process of analyzing data through cleaning, answering and asking the right questions to the data.
 
 ## Process
-### (your step 1)
-### (your step 2)
+### Rather than starting with cleaning the data, I started with looking at the questions and seeing what's aksed of me. That way when I know what's needed of me I can look at the data with a purpose and clean the data when necessary.
+### 
 
 ## Results
 (fill in what you discovered this data could tell you and how you used the data to answer those questions)
