@@ -121,9 +121,13 @@ Majority of products that are purchased from Mountain view, which is known as on
 
 SQL Queries:
 
+SELECT country, city, ROUND(SUM(CAST (totaltransactionrevenue AS DECIMAL))/1000000, 2) AS totalTransactionRevenue FROM all_sessions WHERE city IS NOT NULL AND totaltransactionrevenue IS NOT NULL GROUP BY city, country
+ORDER BY totaltransactionrevenue DESC
 
 
 Answer:
+
+Without taking null cities into the account, majority of city/countries purchases were made in United States (15 out of 20 city/countries) and the lowest total transaction revenue was made by visitor/s from Switzerland, Zurich.
 
 
 
