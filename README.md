@@ -1,7 +1,7 @@
 # Final-Project-Transforming-and-Analyzing-Data-with-SQL
 
 ## Project/Goals
-(fill in your description and goals here)
+The goal for this project is to get a better understanding on the process of analyzing data through cleaning, answering and asking the right questions to the data.
 
 ## Process
 ### (your step 1)
