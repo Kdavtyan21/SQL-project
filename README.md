@@ -5,11 +5,11 @@ The goal for this project is to get a better understanding on the process of ana
 
 ## Process
 ### Rather than starting with cleaning the data, I started with looking at the questions and seeing what's aksed of me. That way when I know what's needed of me I can look at the data with a purpose and clean the data when necessary.
-### 
+### After that I asked my own questions in regards to the data. I askd questions that I believe will give a better understanding on what this data represents.
 
 ## Results
-(fill in what you discovered this data could tell you and how you used the data to answer those questions)
 
+Overall the data shows that a large demographic of visitors or users of this site are from the United States and about half of the visitors made a purchase. (if more data was available we could check the reason for why visitors left the site without a purcahse?)
 ## Challenges 
 (discuss challenges you faced in the project)
 
