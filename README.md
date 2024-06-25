@@ -10,8 +10,11 @@ The goal for this project is to get a better understanding on the process of ana
 ## Results
 
 Overall the data shows that a large demographic of visitors or users of this site are from the United States and about half of the visitors made a purchase. (if more data was available we could check the reason for why visitors left the site without a purcahse?)
+
 ## Challenges 
-(discuss challenges you faced in the project)
+
+Biggest challanges were working with a database that has a lot of data missing (NULL) or data that didn't make sense at the beggining, for example every revenue or product cost/purchase number was multiplied by a million so I had to divide it by a million with every query.
 
 ## Future Goals
-(what would you do if you had more time?)
+
+Making more queries that give you an answer with percentages to give a more statistical overview and make graphs or charts based on those answers to better visiulize the data.
