@@ -14,7 +14,7 @@ Overall the data shows that a large demographic of visitors or users of this sit
 
 ## Challenges 
 
-Biggest challanges were working with a database that has a lot of data missing (NULL) or data that didn't make sense at the beggining, for example every revenue or product cost/purchase number was multiplied by a million so I had to divide it by a million with every query.
+Biggest challanges were working with a database that has a lot of data missing (NULL) or data that didn't make sense at the begining, for example every revenue or product cost/purchase number was multiplied by a million so I had to divide it by a million with every query.
 
 ## Future Goals
 
